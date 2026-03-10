@@ -1,0 +1,86 @@
+.dish-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.dish-details {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.dish-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.dish-price {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.dish-desc {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.custom-text {
+  font-size: 12px;
+  color: #16a34a;
+  margin-bottom: 8px;
+}
+
+.counter-container {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #22c55e;
+  padding: 4px 8px;
+}
+
+.counter-button {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0 6px;
+  cursor: pointer;
+}
+
+.counter-value {
+  color: #ffffff;
+  font-size: 14px;
+  min-width: 24px;
+  text-align: center;
+}
+
+.not-available-text {
+  font-size: 12px;
+  color: #ef4444;
+}
+
+.dish-image-container {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+}
+
+.dish-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 576px) {
+  .dish-card {
+    align-items: center;
+  }
+}

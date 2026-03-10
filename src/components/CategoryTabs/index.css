@@ -1,0 +1,28 @@
+.tabs-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 8px 0;
+  margin-bottom: 16px;
+  scrollbar-width: none;
+}
+
+.tabs-container::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-item {
+  flex-shrink: 0;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.active-tab {
+  background-color: #16a34a;
+  color: #ffffff;
+  border-color: #16a34a;
+}

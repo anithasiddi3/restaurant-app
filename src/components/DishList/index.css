@@ -1,0 +1,9 @@
+.dishes-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.no-dishes-text {
+  text-align: center;
+  margin-top: 16px;
+}
