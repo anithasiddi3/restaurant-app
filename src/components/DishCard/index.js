@@ -13,9 +13,6 @@ const DishCard = props => {
     addonCat,
   } = dish
 
-
-
-
   const hasCustomizations = addonCat && addonCat.length > 0
 
   const onClickIncrement = () => {
@@ -43,53 +40,53 @@ const DishCard = props => {
   const renderQuantitySection = () => {
     if (hideButtons) {
       // "Fresh From The Sea": NO +/- buttons at all, only a 0 paragraph per dish
-      return <p className='counter-value'>{quantity}</p>
+      return <p className="counter-value">{quantity}</p>
     }
 
     // For all other categories:
     // show +/- always, but disable them for unavailable dishes
     return (
-      <div className='counter-container'>
+      <div className="counter-container">
         <button
-          type='button'
-          className='counter-button'
+          type="button"
+          className="counter-button"
           onClick={onClickDecrement}
           disabled={!dishAvailability}
         >
           -
         </button>
-        <p className='counter-value'>{quantity}</p>
+        <p className="counter-value">{quantity}</p>
         <button
-          type='button'
-          className='counter-button'
+          type="button"
+          className="counter-button"
           onClick={onClickIncrement}
           disabled={!dishAvailability}
         >
           +
         </button>
         {!dishAvailability && (
-          <p className='not-available-text'>Not available</p>
+          <p className="not-available-text">Not available</p>
         )}
       </div>
     )
   }
 
   return (
-    <li className='dish-card'>
-      <div className='dish-details'>
-        <h3 className='dish-name'>{dishName}</h3>
-        <p className='dish-price'>
+    <li className="dish-card">
+      <div className="dish-details">
+        <h3 className="dish-name">{dishName}</h3>
+        <p className="dish-price">
           {dishCurrency} {dishPrice}
         </p>
-        <p className='dish-desc'>{dishDescription}</p>
-        <p className='dish-calories'>{dishCalories} calories</p>
+        <p className="dish-desc">{dishDescription}</p>
+        <p className="dish-calories">{dishCalories} calories</p>
         {hasCustomizations && (
-          <p className='custom-text'>Customizations available</p>
+          <p className="custom-text">Customizations available</p>
         )}
         {renderQuantitySection()}
       </div>
-      <div className='dish-image-container'>
-        <img src={dishImage} alt={dishName} className='dish-image' />
+      <div className="dish-image-container">
+        <img src={dishImage} alt={dishName} className="dish-image" />
       </div>
     </li>
   )
