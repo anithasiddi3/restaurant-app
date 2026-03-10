@@ -13,6 +13,9 @@ const DishCard = props => {
     addonCat,
   } = dish
 
+
+
+
   const hasCustomizations = addonCat && addonCat.length > 0
 
   const onClickIncrement = () => {
