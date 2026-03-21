@@ -1,0 +1,18 @@
+.home-bg {
+  padding: 24px;
+}
+
+.home-heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.dishes-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}

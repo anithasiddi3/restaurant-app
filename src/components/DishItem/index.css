@@ -1,0 +1,50 @@
+.dish-item {
+  width: 220px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.dish-image {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.dish-name {
+  font-size: 16px;
+  margin: 8px 0 4px;
+  color: #0f172a;
+}
+
+.dish-price {
+  margin: 0 0 8px;
+  color: #16a34a;
+}
+
+.dish-quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.dish-qty-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #cbd5f5;
+  background-color: transparent;
+}
+
+.dish-qty {
+  margin: 0;
+}
+
+.add-to-cart-btn {
+  border: none;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
